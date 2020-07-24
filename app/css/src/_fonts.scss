@@ -1,0 +1,7 @@
+@import "_mixins/font-face";
+
+@include font-face("PP_XB", "../../fonts/Poppins-ExtraBold",400, normal);
+@include font-face("PP_B", "../../fonts/Poppins-Bold",300, normal);
+@include font-face("PP_R", "../../fonts/Poppins-Regular",300, normal);
+@include font-face("PP_XL", "../../fonts/Poppins-ExtraLight",300, normal);
+
