@@ -19,10 +19,10 @@
 				<div class="col-12 col-sm-12 col-md-12 col-lg-12">
 					<nav>
 						<ul class="text-right">
-							<li>HOME</li>
-							<li>ABOUT</li>
-							<li>WORK</li>
-							<li>CONTACT</li>
+							<li><a href="#home">HOME</a></li>
+							<li><a href="#skills">ABOUT</a></li>
+							<li><a href="#work">WORK</a></li>
+							<li><a href="#contact">CONTACT</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -34,8 +34,12 @@
 				</div>
 			</div>
 		</div>
-		<!-- <i class="scrolldown fas fa-chevron-down"> -->
+		
 	</header>
+
+	<!-- BOUTON RETOUR AU MENU -->
+
+	<button onclick="retourMenu()" id="boutonMenu" title="Retour au menu"><i class="fas fa-chevron-circle-up"></i></button>
 
 	<!-- SECTION COMPETENCES -->
 
@@ -67,8 +71,154 @@
 		</div>
 
 	</section>
+
+	<!-- SECTION PROJETS --> 
+
+	<section id="work">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+					<h2>MES PROJETS</h2>
+					<p>Voici les maquettes réalisées durant mon apprentissage du métier de développeur web :</p>
+				</div>
+			</div>
+			<div class="row mt-5 justify-content-center align-items-center">
+				<div class="col-12 col-sm-12 col-sm-6 col-lg-6">
+					<img src="img/campus.jpg" alt="gamingcampus">
+				</div>
+				<div class="col-12 col-sm-12 col-sm-6 col-lg-6">
+					<img src="img/volcano.jpg" alt="volcano">
+				</div>
+			</div>
+			<div class="row mt-5 justify-content-center align-items-center">
+				<div class="col-12 col-sm-12 col-sm-6 col-lg-6">
+					<img src="img/-leresto.jpg" alt="theresto">
+				</div>
+				<div class="col-12 col-sm-12 col-sm-6 col-lg-6">
+					<img src="img/arclab.jpg" alt="artlab">
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<!-- SECTION CONTACT -->
+
+	<section id="contact">
+
+	<!-- CV -->
+
+		<div class="container-fluid cv">
+			<div class="row mt-5 justify-content-center align-items-center">
+				<p>Si vous le souhaitez, vous pouvez consulter mon cv :</p>
+				<div class="button1">Consulter mon CV</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- FORMULAIRE -->
+
+	<section id="formulaire">
+
+		<div class="container cartoucheform">
+			
+			<div class="row align-items-center">
+				<div class="col-12 col-sm-12 col-lg-12">
+					<h2>CONTACTEZ-MOI</h2>
+				</div>
+			</div>
+
+			<div class="row align-items-center">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+					<form>
+						<label for="name">Nom :</label>
+    					<input id="name" name="nom" type="text">
+					</form>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+					<form>
+    					<label for="prenom">Prénom :</label>
+    					<input id="prenom" name="prenom" type="text">
+					</form>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+
+					<form>
+						<label for="email">E-mail :</label>
+    					<input type="email">
+					</form>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+					<form>
+    					<textarea id="message" placeholder="Message"></textarea>
+					</form>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-3 offset-1">
+					<form>
+    					<input class="envoyez" type="submit" value="Envoyez">
+					</form>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<!-- FOOTER -->
+
+	<footer>
+		<div class="container-fluid">
+			<div class="row no-gutters">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+					<nav>
+						<ul class="text-right">
+							<li><a href="#home">HOME</a></li>
+							<li><a href="#skills">ABOUT</a></li>
+							<li><a href="#work">WORK</a></li>
+							<li><a href="#contact">CONTACT</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="row align-items-bottom justify-content-right">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+					<p><i class="fab fa-linkedin-in"></i><i class="fab fa-twitter"></i><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i><i class="far fa-envelope"></i></p>
+					<p>© Copyright Marion Londero 2020 Developpeuse Web Mentions Légales</p>
+				</div>
+				
+			</div>
+	</footer>
 	
 
+<script >
+
+// BOUTON RETOUR MENU
+
+boutonMenu = document.getElementById("boutonMenu");
+
+// Quand on scroll 200px vers le bas le bouton apparait
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    boutonMenu.style.display = "block";
+  } else {
+    boutonMenu.style.display = "none";
+  }
+}
+
+// Quand on clique sur le bouton retour au début du document
+function retourMenu() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+</script>
 
 
 </body>

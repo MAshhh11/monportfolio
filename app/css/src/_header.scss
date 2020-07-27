@@ -9,7 +9,7 @@ header {
             margin-top: 55vh;
 
         }
-    li {
+    li{
     		@include font(PP_B,30px, center);
     		list-style: none;
     		display: inline;
@@ -25,34 +25,49 @@ header {
 	.button1:hover {
 			cursor: pointer;
 			font-size: 28px;
-			background-color: rgba(255,255,255,0.1)
+			background-color: rgba(255,255,255,0.1);
 	}
 }
 
-nav ul li:hover {
+nav ul li {
+		a:link {
+    		color: white;
+    		text-decoration: none;
+		}
+		a:hover {
     		border-bottom: 2px solid white;
 			cursor: pointer;
-			background-color: rgba(255,255,255,0.1)
-    }
+			background-color: rgba(255,255,255,0.1);
+		}
+		a:visited {
+    		color: white;
+    		text-decoration: none;
+		}
+}
 
-// INDICATEUR SCROLL DOWN
 
-// .scrolldown {
-// 			float: right;
-// 			font-size: 30px;
-// 		    color: white;
-// 		    animation: scrolling 2s ease infinite;	   
-// }
 
-// @keyframes scrolling {
-// 		  0% {
-// 		    transform: translate(0);
-// }
-// 		  50% {
-// 		    transform: translate(0,50px);
-// }
-// 		  100% {
-// 		    transform: translate(0);
-// 		  }
-// }
+// BOUTON RETOUR MENU
+
+#boutonMenu {
+  display: none; 
+  position: fixed; 
+  bottom: 30%; 
+  right: 3%; 
+  z-index: 99; // pour que le bouton soit toujours au dessus des autres éléments
+  border: none; 
+  outline: none; 
+  background-color: #11999E; 
+  color: white; 
+  cursor: pointer; 
+  padding: 5px 15px; 
+  border-radius: 10px; 
+  font-size: 30px; 
+}
+
+#boutonMenu:hover {
+  background-color: #555;
+}
+
+
 

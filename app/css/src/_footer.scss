@@ -1,0 +1,19 @@
+footer {
+		height: 25vh;
+		background-color: #40514E;
+		color: white;
+		padding:20px;
+	    li{
+    		@include font(PP_B,30px, center);
+    		list-style: none;
+    		display: inline;
+    		padding: 10px;
+    	}
+    	p {
+    		@include font(PP_XL,20px, right);
+    	}
+    	p i {
+    		font-size: 40px;
+    		padding: 10px;
+    	}
+}

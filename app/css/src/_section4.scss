@@ -1,69 +1,72 @@
-// body>section:nth-of-type(3) article:nth-of-type(1) {
-// 	background-color: #222222;
-// 	height: 600px;
-// 	display: flex;
-// 	align-items: center;
-// 	align-content: center;
-// }
+.cv {
+	background-color: #11999E;
+	height: 40vh;
+	color: white;
+	padding-top: 7%;
+	@include font(PP_R,25px, center);
+	p {
+		padding-right: 30px;
+	}
+	.button1 {
+		@include font(PP_R,30px, left);
+		border: 2px solid white;
+		border-radius: 20px;
+		text-align: center;
+		width: 350px;
+	}
+	.button1:hover {
+			cursor: pointer;
+			font-size: 28px;
+			background-color: rgba(255,255,255,0.1);
+	}
+}
 
-// body>section:nth-of-type(3) article:nth-of-type(1) div:nth-of-type(1) {
-// 	background-color: black;
-// 	padding: 40px;
-// 	margin: 0 auto;
-// 	text-align: center;
-// 		h2 {
-// 		@include font(ALLU,50px, center);
-// 		color: orange;
-// 	}
-// 	h3 {
-// 		@include font(POP_R, 30px, center);
-// 		color: white;
-// 	}
-// 	h4 {
-// 		@include font(ALLU,18px, center);
-// 		color: orange;
-// 		padding: 10px;
-// 	}
-// 	p {
-// 		@include font(POP_R,12px, center);
-// 		color: white;
-// 		padding: 5px;
-// 	}
-// }
+#formulaire {
+	height: 100vh;
+	background-image: url(../../../img/coding.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #E4F9F5;
 
-// body>section:nth-of-type(3) article:nth-of-type(1) div:nth-of-type(2) {
-// 	background-color: white;
-// 	text-align: center;
-// 	margin: 20%;
-// 	padding: 90px;
-// 	margin: 0 auto;
-// 	img {
-// 		padding: 10px;
-// 	}
-// 	label{
-// 		padding: 10px;
-// 		margin-right: 15px;
-// 	}
-// 	form {
-// 		margin: o auto;
-// 		padding: 10px;
-// 	}
-// 	h2 {
-// 		@include font(ALLU,50px, center);
-// 		color: orange;
-// 	}
-// 	h3 {
-// 		@include font(POP_R, 30px, center);
-// 		color : black;
-// 	}
-// 	&>div {
-// 		width: 100px;
-// 		padding: 10px;
-// 		margin-top: 40px;
-// 		color: white;
-// 		border-radius: 15px;
-// 		@include font(POP_R, 15px, center);
+}
 
-// 	}
+.cartoucheform {
+	height: 90vh;
+	background-color: white;
+	border-radius: 20px;
+	width: 80vw;
+	padding: 3%;
+	h2 {
+		@include font(PP_XB,40px, center);
+		padding: 3%;
+	}
+	label {
+		@include font(PP_XL,20px, center);
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-bottom: 3%;
+	}
+	textarea {
+		@include font(PP_XL,20px, left);
+		padding: 2%;
+		margin-top: 3%;
+		margin-left: 5%;
+		margin-bottom: 3%;
+		width: 110vh;
+		height: 25vh;
+	}
+	input {
+		border:none;
+		border-bottom: 1px solid black;
+		width: 30vw;
+	}
+	.envoyez {
+		@include font(PP_XL,20px, center);
+		width: 20vh;
+		margin: 2%;
+		background-color: white;
+		border: 1px solid black;
+		border-radius: 12px;
+	}
+}
 
-// }
