@@ -1,20 +1,24 @@
 header {
-	height: 120vh;
+  height: 110vh;
 	background-image: url(../../../img/underwater.jpg);
 	background-size: cover;
 	color: white;
 	padding: 2vw;
-	h1 {
-            @include font(PP_XB,50px, left);
-            margin-top: 55vh;
 
-        }
-    li{
-    		@include font(PP_B,30px, center);
-    		list-style: none;
-    		display: inline;
-    		padding: 10px;
-    }
+	h1 {
+      @include font(PP_XB,50px, left);
+      margin-top: 55vh;
+      @include for-phone-only {
+          @include font(PP_XB,60px, left);
+       }
+
+  }
+  li{
+    	@include font(PP_B,30px, center);
+    	list-style: none;
+    	display: inline;
+    	padding: 10px;
+  }
 	.button1{
 			@include font(PP_R,30px, left);
 			border: 2px solid white;
@@ -45,15 +49,13 @@ nav ul li {
 		}
 }
 
-
-
 // BOUTON RETOUR MENU
 
 #boutonMenu {
   display: none; 
   position: fixed; 
   bottom: 30%; 
-  right: 3%; 
+  right: 2%; 
   z-index: 99; // pour que le bouton soit toujours au dessus des autres éléments
   border: none; 
   outline: none; 

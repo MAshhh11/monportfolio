@@ -1,44 +1,45 @@
 .cv {
+	height: auto;
 	background-color: #11999E;
-	height: 40vh;
 	color: white;
-	padding-top: 7%;
-	@include font(PP_R,25px, center);
+	padding-top: 10vh;
+	padding-bottom: 15vh;
 	p {
-		padding-right: 30px;
+		@include font(PP_R,23px, center);
+		padding: 15px;
 	}
+	
 	.button1 {
-		@include font(PP_R,30px, left);
+		@include font(PP_R,23px, center);
 		border: 2px solid white;
 		border-radius: 20px;
 		text-align: center;
-		width: 350px;
+		padding: 5px;
+
 	}
 	.button1:hover {
 			cursor: pointer;
-			font-size: 28px;
+			font-size: 22px;
 			background-color: rgba(255,255,255,0.1);
 	}
 }
 
 #formulaire {
-	height: 100vh;
 	background-image: url(../../../img/coding.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: #E4F9F5;
-
+	height: auto;
 }
 
-.cartoucheform {
-	height: 90vh;
+.cartoucheform { 
 	background-color: white;
 	border-radius: 20px;
-	width: 80vw;
-	padding: 3%;
+	padding: 10vh;
+
 	h2 {
 		@include font(PP_XB,40px, center);
-		padding: 3%;
+		padding: 5%;
 	}
 	label {
 		@include font(PP_XL,20px, center);
@@ -52,8 +53,22 @@
 		margin-top: 3%;
 		margin-left: 5%;
 		margin-bottom: 3%;
-		width: 110vh;
-		height: 25vh;
+		@include for-tablet-portrait-up {
+			width : 60vw;
+			height: 20vh;
+		}
+		@include for-tablet-landscape-up{
+			width: 60vw;
+			height: 30vh;
+		}
+		@include for-desktop-up {
+			width: 65vw;
+			height: 25vh;
+		}
+		@include for-big-desktop-up {
+			width: 40vw;
+			height: 25vh;
+		}
 	}
 	input {
 		border:none;
@@ -67,6 +82,9 @@
 		background-color: white;
 		border: 1px solid black;
 		border-radius: 12px;
+		@include for-tablet-portrait-up {
+		width : 12vw;
+		}
 	}
 	
 }

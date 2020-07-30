@@ -1,11 +1,13 @@
 #work {
-	margin-top: 25vh;
-	height: 160vh;
-
+	height: auto;
+	margin-bottom: 10vh; 
 	img {
 		width: 100%;
 		border-radius: 20px;
 		box-shadow: 5px 5px 5px lightgrey;
+		@include for-tablet-portrait-up {
+		margin-top: 10%;
+		}
 	}
 	img:hover{
 		width: 99%;
@@ -14,6 +16,7 @@
 	h2 {
 		@include font(PP_XB,40px, center);
 		padding: 30px;
+		margin-top: 5vh;
 	}
 	p {
 		@include font(PP_XL,20px, center);

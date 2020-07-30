@@ -1,8 +1,19 @@
 footer {
-		height: 25vh;
 		background-color: #40514E;
 		color: white;
 		padding:20px;
+		@include for-tablet-portrait-up {
+			height: 20vh;
+		}
+		@include for-tablet-landscape-up{
+			height: 30vh;
+		}
+		@include for-desktop-up {
+			height: 25vh;
+		}
+		@include for-big-desktop-up {
+			height: 25vh;
+		}
 	    li{
     		@include font(PP_B,30px, center);
     		list-style: none;
