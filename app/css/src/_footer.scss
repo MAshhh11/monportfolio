@@ -3,7 +3,7 @@ footer {
 		color: white;
 		padding:20px;
 		@include for-tablet-portrait-up {
-			height: 20vh;
+			height: 25vh;
 		}
 		@include for-tablet-landscape-up{
 			height: 30vh;

@@ -8,10 +8,6 @@ header {
 	h1 {
       @include font(PP_XB,50px, left);
       margin-top: 55vh;
-      @include for-phone-only {
-          @include font(PP_XB,60px, left);
-       }
-
   }
   li{
     	@include font(PP_B,30px, center);
@@ -25,6 +21,7 @@ header {
 			border-radius: 20px;
 			text-align: center;
 			width: 350px;
+      margin-top: 2vh;
 	}
 	.button1:hover {
 			cursor: pointer;
@@ -48,6 +45,16 @@ nav ul li {
     		text-decoration: none;
 		}
 }
+
+
+// Affichage du menu classique selon résolution
+
+#classicnav {
+    @include for-phone-only {
+        display: none;
+    }
+  }
+
 
 // BOUTON RETOUR MENU
 

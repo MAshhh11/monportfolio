@@ -15,6 +15,7 @@
 		border-radius: 20px;
 		text-align: center;
 		padding: 5px;
+		margin-bottom: 20px;
 
 	}
 	.button1:hover {
@@ -53,8 +54,12 @@
 		margin-top: 3%;
 		margin-left: 5%;
 		margin-bottom: 3%;
+		@include for-phone-only {
+			width : 75vw;
+			height: 20vh;
+		}
 		@include for-tablet-portrait-up {
-			width : 60vw;
+			width : 65vw;
 			height: 20vh;
 		}
 		@include for-tablet-landscape-up{
@@ -62,7 +67,7 @@
 			height: 30vh;
 		}
 		@include for-desktop-up {
-			width: 65vw;
+			width: 60vw;
 			height: 25vh;
 		}
 		@include for-big-desktop-up {
