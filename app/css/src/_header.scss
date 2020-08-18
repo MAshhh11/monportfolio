@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 header {
   height: 110vh;
 	background-image: url(../../../img/underwater.jpg);
@@ -8,6 +13,9 @@ header {
 	h1 {
       @include font(PP_XB,50px, left);
       margin-top: 55vh;
+  }
+  h2{
+     @include font(PP_XB,50px, left);
   }
   li{
     	@include font(PP_B,30px, center);
@@ -22,6 +30,17 @@ header {
 			text-align: center;
 			width: 350px;
       margin-top: 2vh;
+      a:link {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        cursor: pointer;
+     }
+     a:visited {
+        color: white;
+        text-decoration: none;
+    }
 	}
 	.button1:hover {
 			cursor: pointer;

@@ -55,11 +55,11 @@
 		margin-left: 5%;
 		margin-bottom: 3%;
 		@include for-phone-only {
-			width : 75vw;
+			width : 60vw;
 			height: 20vh;
 		}
 		@include for-tablet-portrait-up {
-			width : 65vw;
+			width : 60vw;
 			height: 20vh;
 		}
 		@include for-tablet-landscape-up{
