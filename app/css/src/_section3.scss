@@ -24,5 +24,8 @@
 	p {
 		@include font(PP_XL,20px, center);
 		padding: 30px;
+		@include for-phone-only{
+			font-size: 18px; 
+		}
 	}
 }

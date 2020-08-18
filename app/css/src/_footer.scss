@@ -2,6 +2,9 @@ footer {
 		background-color: #40514E;
 		color: white;
 		padding:20px;
+		@include for-phone-only {
+			padding:5px;
+		}
 		@include for-tablet-portrait-up {
 			height: 25vh;
 		}

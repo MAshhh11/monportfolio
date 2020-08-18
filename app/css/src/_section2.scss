@@ -12,10 +12,17 @@
 	img {
 		width: 50%;
 		padding: 30px;
+		@include for-phone-only{
+			width: 30%;
+		}
+
 	}
 	h3{
 		@include font(PP_B,30px, center);
 		padding-bottom: 30px;
+		@include for-phone-only{
+			font-size: 25px;
+		}
 	}
 	h4{
 		@include font(PP_R,20px, center);
@@ -24,5 +31,8 @@
 	p {
 		@include font(PP_XL,20px, center);
 		padding: 30px;
+		@include for-phone-only{
+			font-size: 18px; 
+		}
 	}
 }
