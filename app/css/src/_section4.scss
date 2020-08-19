@@ -1,3 +1,4 @@
+
 .cv {
 	height: auto;
 	background-color: #11999E;
@@ -17,12 +18,23 @@
 		text-align: center;
 		padding: 5px;
 		margin-bottom: 20px;
+		color:white;
+		a:link {
+        color: white;
+        text-decoration: none;
+      	}
+     	a:visited {
+        color: white;
+        text-decoration: none;
+    }
 
 	}
 	.button1:hover {
 			cursor: pointer;
 			font-size: 22px;
 			background-color: rgba(255,255,255,0.1);
+			text-decoration: none;
+
 	}
 }
 

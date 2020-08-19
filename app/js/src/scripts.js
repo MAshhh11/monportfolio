@@ -12,8 +12,7 @@ anime.timeline()
     opacity: [0,1],
     translateZ: 0,
     easing: "easeOutExpo",
-    duration: 950,
-    delay: (el, i) => 70*i
+    delay: (el, i) => 180*i
   });
 
 
@@ -30,8 +29,7 @@ anime.timeline()
     opacity: [0,1],
     translateZ: 0,
     easing: "easeOutExpo",
-    duration: 950,
-    delay: (el, i) => 70*i
+    delay: (el, i) => 150*i
   });
 
 
@@ -48,8 +46,7 @@ anime.timeline()
     opacity: [0,1],
     translateZ: 0,
     easing: "easeOutExpo",
-    duration: 950,
-    delay: (el, i) => 70*i
+    delay: (el, i) => 120*i
   });
 
 
