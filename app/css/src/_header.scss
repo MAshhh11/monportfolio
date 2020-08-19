@@ -13,9 +13,15 @@ header {
 	h1 {
       @include font(PP_XB,50px, left);
       margin-top: 55vh;
+      @include for-phone-only{
+        font-size: 30px;
+      }
   }
   h2{
      @include font(PP_XB,50px, left);
+     @include for-phone-only{
+        font-size: 30px;
+      }
   }
   li{
     	@include font(PP_B,30px, center);
@@ -28,8 +34,18 @@ header {
 			border: 2px solid white;
 			border-radius: 20px;
 			text-align: center;
-			width: 350px;
+			width: 20vw;
       margin-top: 2vh;
+      @include for-phone-only {
+        font-size: 15px;
+        width: 35vw;
+      }
+      @include for-tablet-portrait-up {
+        width: 35vw;
+      }
+      @include for-tablet-landscape-up {
+        width: 35vw;
+      }
       a:link {
         color: white;
         text-decoration: none;
