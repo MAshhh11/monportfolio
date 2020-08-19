@@ -28,6 +28,11 @@ header {
     	list-style: none;
     	display: inline;
     	padding: 10px;
+      @include for-phone-only {
+        font-size: 18px;
+        width: 40vw;
+        padding: 3px;
+      }
   }
 	.button1{
 			@include font(PP_R,30px, left);
@@ -37,8 +42,8 @@ header {
 			width: 20vw;
       margin-top: 2vh;
       @include for-phone-only {
-        font-size: 15px;
-        width: 35vw;
+        font-size: 20px;
+        width: 50vw;
       }
       @include for-tablet-portrait-up {
         width: 35vw;
