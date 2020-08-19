@@ -50,6 +50,13 @@ anime.timeline()
   });
 
 
+//TOGGLE SHOW Animations au lancement de la page
+
+    $('h3').toggle(3000).show(2000); //sur les H3
+    $('h4').toggle(3000).show(2000); // sur les H4
+    $('img').toggle(2000).show(2000); // sur les images
+
+
 
 // BOUTON RETOUR MENU
 

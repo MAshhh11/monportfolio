@@ -50,6 +50,7 @@
 	background-color: white;
 	border-radius: 20px;
 	padding: 10vh;
+	box-shadow: 0px 5px 5px lightgrey;
 
 	h2 {
 		@include font(PP_XB,40px, center);
