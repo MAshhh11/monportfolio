@@ -2,121 +2,120 @@ html {
   scroll-behavior: smooth;
 }
 
-
 header {
   height: 110vh;
-	background-image: url(../../../img/underwater.jpg);
-	background-size: cover;
-	color: white;
-	padding: 2vw;
+  background-image: url(../../../img/underwater.jpg);
+  background-size: cover;
+  color: white;
+  padding: 2vw;
 
-	h1 {
-      @include font(PP_XB,50px, left);
-      margin-top: 55vh;
-      @include for-phone-only{
-        font-size: 30px;
-      }
-  }
-  h2{
-     @include font(PP_XB,50px, left);
-     @include for-phone-only{
-        font-size: 30px;
-      }
-  }
-  li{
-    	@include font(PP_B,30px, center);
-    	list-style: none;
-    	display: inline;
-    	padding: 10px;
-      @include for-phone-only {
-        font-size: 18px;
-        width: 40vw;
-        padding: 3px;
-      }
-  }
-	.button1{
-			@include font(PP_R,30px, left);
-			border: 2px solid white;
-			border-radius: 20px;
-			text-align: center;
-			width: 20vw;
-      margin-top: 2vh;
-      @include for-phone-only {
-        font-size: 20px;
-        width: 50vw;
-      }
-      @include for-tablet-portrait-up {
-        width: 35vw;
-      }
-      @include for-tablet-landscape-up {
-        width: 35vw;
-      }
-      a:link {
-        color: white;
-        text-decoration: none;
-      }
-      a:hover {
-        cursor: pointer;
-     }
-     a:visited {
-        color: white;
-        text-decoration: none;
+  h1 {
+    @include font(PP_XB, 50px, left);
+    margin-top: 55vh;
+    @include for-phone-only {
+      font-size: 30px;
     }
-	}
-	.button1:hover {
-			cursor: pointer;
-			font-size: 28px;
-			background-color: rgba(255,255,255,0.1);
-	}
+  }
+  h2 {
+    @include font(PP_XB, 50px, left);
+    @include for-phone-only {
+      font-size: 30px;
+    }
+  }
+  li {
+    @include font(PP_B, 30px, center);
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    @include for-phone-only {
+      font-size: 18px;
+      width: 40vw;
+      padding: 3px;
+    }
+  }
+  .button1 {
+    @include font(PP_R, 30px, left);
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 2vh;
+    @include for-phone-only {
+      font-size: 20px;
+      width: 50vw;
+    }
+    @include for-tablet-portrait-up {
+      width: 35vw;
+    }
+    @include for-tablet-landscape-up {
+      width: 30vw;
+    }
+    @include for-desktop-up {
+      width: 20vw;
+    }
+    @include for-big-desktop-up {
+      width: 14vw;
+    }
+    a:link {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      cursor: pointer;
+    }
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .button1:hover {
+    cursor: pointer;
+    font-size: 28px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 nav ul li {
-		a:link {
-    		color: white;
-    		text-decoration: none;
-		}
-		a:hover {
-    		border-bottom: 2px solid white;
-			cursor: pointer;
-			background-color: rgba(255,255,255,0.1);
-		}
-		a:visited {
-    		color: white;
-    		text-decoration: none;
-		}
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
 }
-
 
 // Affichage du menu classique selon résolution
 
 #classicnav {
-    @include for-phone-only {
-        display: none;
-    }
+  @include for-phone-only {
+    display: none;
   }
-
+}
 
 // BOUTON RETOUR MENU
 
 #boutonMenu {
-  display: none; 
-  position: fixed; 
-  bottom: 30%; 
-  right: 2%; 
+  display: none;
+  position: fixed;
+  bottom: 30%;
+  right: 2%;
   z-index: 99; // pour que le bouton soit toujours au dessus des autres éléments
-  border: none; 
-  outline: none; 
-  background-color: #11999E; 
-  color: white; 
-  cursor: pointer; 
-  padding: 5px 15px; 
-  border-radius: 10px; 
-  font-size: 30px; 
+  border: none;
+  outline: none;
+  background-color: #11999e;
+  color: white;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 30px;
 }
 
 #boutonMenu:hover {
   background-color: #555;
 }
-
-
-
