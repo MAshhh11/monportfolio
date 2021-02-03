@@ -1,110 +1,106 @@
-
 .cv {
-	height: auto;
-	background-color: #11999E;
-	color: white;
-	padding-top: 10vh;
-	padding-bottom: 15vh;
-	p {
-		@include font(PP_R,23px, center);
-		padding: 15px;
+  height: auto;
+  background-color: #11999e;
+  color: white;
+  padding-top: 10vh;
+  padding-bottom: 15vh;
+  p {
+    @include font(PP_R, 23px, center);
+    padding: 15px;
+  }
 
-	}
-	
-	.button1 {
-		@include font(PP_R,23px, center);
-		border: 2px solid white;
-		border-radius: 20px;
-		text-align: center;
-		padding: 5px;
-		margin-bottom: 20px;
-		color:white;
-		a:link {
-        color: white;
-        text-decoration: none;
-      	}
-     	a:visited {
-        color: white;
-        text-decoration: none;
+  .button1 {
+    @include font(PP_R, 23px, center);
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+    color: white;
+    a:link {
+      color: white;
+      text-decoration: none;
     }
-
-	}
-	.button1:hover {
-			cursor: pointer;
-			font-size: 22px;
-			background-color: rgba(255,255,255,0.1);
-			text-decoration: none;
-
-	}
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .button1:hover {
+    cursor: pointer;
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+  }
 }
 
 #formulaire {
-	background-image: url(../../../img/coding.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-color: #E4F9F5;
-	height: auto;
+  background-image: url(../../../img/coding.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #e4f9f5;
+  height: auto;
 }
 
-.cartoucheform { 
-	background-color: white;
-	border-radius: 20px;
-	padding: 10vh;
-	box-shadow: 0px 5px 5px lightgrey;
+.cartoucheform {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10vh;
+  box-shadow: 0px 5px 5px lightgrey;
+  position: relative;
+  top: -50px;
 
-	h2 {
-		@include font(PP_XB,40px, center);
-		padding: 5%;
-	}
-	label {
-		@include font(PP_XL,20px, center);
-		padding-left: 5%;
-		padding-right: 5%;
-		padding-bottom: 3%;
-	}
-	textarea {
-		@include font(PP_XL,20px, left);
-		padding: 2%;
-		margin-top: 3%;
-		margin-left: 5%;
-		margin-bottom: 3%;
-		@include for-phone-only {
-			width : 60vw;
-			height: 20vh;
-		}
-		@include for-tablet-portrait-up {
-			width : 60vw;
-			height: 20vh;
-		}
-		@include for-tablet-landscape-up{
-			width: 60vw;
-			height: 30vh;
-		}
-		@include for-desktop-up {
-			width: 60vw;
-			height: 25vh;
-		}
-		@include for-big-desktop-up {
-			width: 40vw;
-			height: 25vh;
-		}
-	}
-	input {
-		border:none;
-		border-bottom: 1px solid black;
-		width: 30vw;
-	}
-	.envoyez {
-		@include font(PP_XL,20px, center);
-		width: 20vh;
-		margin: 2%;
-		background-color: white;
-		border: 1px solid black;
-		border-radius: 12px;
-		@include for-tablet-portrait-up {
-			width : 12vw;
-		}
-	}
-	
+  h2 {
+    @include font(PP_XB, 40px, center);
+    padding: 5%;
+  }
+  label {
+    @include font(PP_XL, 20px, center);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+  }
+  textarea {
+    @include font(PP_XL, 20px, left);
+    padding: 2%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    @include for-phone-only {
+      width: 60vw;
+      height: 20vh;
+    }
+    @include for-tablet-portrait-up {
+      width: 60vw;
+      height: 20vh;
+    }
+    @include for-tablet-landscape-up {
+      width: 60vw;
+      height: 30vh;
+    }
+    @include for-desktop-up {
+      width: 60vw;
+      height: 25vh;
+    }
+    @include for-big-desktop-up {
+      width: 40vw;
+      height: 25vh;
+    }
+  }
+  input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 30vw;
+  }
+  .envoyez {
+    @include font(PP_XL, 20px, center);
+    width: 20vh;
+    margin: 2%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 12px;
+    @include for-tablet-portrait-up {
+      width: 12vw;
+    }
+  }
 }
-

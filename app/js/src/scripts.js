@@ -54,7 +54,7 @@ anime.timeline()
 
     $('h3').toggle(3000).show(2000); //sur les H3
     $('h4').toggle(3000).show(2000); // sur les H4
-    $('img').toggle(2000).show(2000); // sur les images
+    $('.toggle').toggle(2000).show(2000); // sur les images
 
 
 
@@ -78,3 +78,4 @@ function retourMenu() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+

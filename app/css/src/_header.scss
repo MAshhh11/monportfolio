@@ -17,13 +17,13 @@ header {
     }
   }
   h2 {
-    @include font(PP_XB, 50px, left);
+    @include font(PP_XB, 45px, left);
     @include for-phone-only {
       font-size: 30px;
     }
   }
   li {
-    @include font(PP_B, 30px, center);
+    @include font(PP_B, 25px, center);
     list-style: none;
     display: inline;
     padding: 10px;
@@ -82,7 +82,6 @@ nav ul li {
   a:hover {
     border-bottom: 2px solid white;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.1);
   }
   a:visited {
     color: white;
@@ -103,7 +102,7 @@ nav ul li {
 #boutonMenu {
   display: none;
   position: fixed;
-  bottom: 30%;
+  bottom: 26%;
   right: 2%;
   z-index: 99; // pour que le bouton soit toujours au dessus des autres éléments
   border: none;

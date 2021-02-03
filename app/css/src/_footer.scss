@@ -1,33 +1,33 @@
 footer {
-		background-color: #40514E;
-		color: white;
-		padding:20px;
-		@include for-phone-only {
-			padding:5px;
-		}
-		@include for-tablet-portrait-up {
-			height: 25vh;
-		}
-		@include for-tablet-landscape-up{
-			height: 30vh;
-		}
-		@include for-desktop-up {
-			height: 25vh;
-		}
-		@include for-big-desktop-up {
-			height: 25vh;
-		}
-	    li{
-    		@include font(PP_B,30px, center);
-    		list-style: none;
-    		display: inline;
-    		padding: 10px;
-    	}
-    	p {
-    		@include font(PP_XL,20px, right);
-    	}
-    	p i {
-    		font-size: 40px;
-    		padding: 10px;
-    	}
+  background-color: #40514e;
+  color: white;
+  padding: 20px;
+  @include for-phone-only {
+    padding: 5px;
+  }
+  @include for-tablet-portrait-up {
+    height: 25vh;
+  }
+  @include for-tablet-landscape-up {
+    height: 30vh;
+  }
+  @include for-desktop-up {
+    height: 25vh;
+  }
+  @include for-big-desktop-up {
+    height: 25vh;
+  }
+  li {
+    @include font(PP_B, 25px, center);
+    list-style: none;
+    display: inline;
+    padding: 10px;
+  }
+  p {
+    @include font(PP_XL, 18px, right);
+  }
+  p i {
+    font-size: 30px;
+    padding: 10px;
+  }
 }
