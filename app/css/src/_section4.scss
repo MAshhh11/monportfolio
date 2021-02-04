@@ -55,13 +55,13 @@
     padding: 5%;
   }
   label {
-    @include font(PP_XL, 20px, center);
+    @include font(PP_XL, 18px, center);
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 3%;
   }
   textarea {
-    @include font(PP_XL, 20px, left);
+    @include font(PP_XL, 18px, left);
     padding: 2%;
     margin-top: 3%;
     margin-left: 5%;

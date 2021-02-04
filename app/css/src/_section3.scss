@@ -26,7 +26,7 @@
     margin-top: 5vh;
   }
   p {
-    @include font(PP_XL, 20px, center);
+    @include font(PP_XL, 18px, center);
     padding: 20px;
     @include for-phone-only {
       font-size: 18px;
