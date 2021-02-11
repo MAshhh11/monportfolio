@@ -22,14 +22,14 @@
     width: 40%;
     padding: 30px;
     @include for-phone-only {
-      width: 40%;
+      width: 38%;
     }
   }
   h3 {
     @include font(PP_B, 23px, center);
     padding-bottom: 30px;
     @include for-phone-only {
-      font-size: 25px;
+      font-size: 22px;
     }
   }
   h4 {
@@ -39,7 +39,7 @@
     @include font(PP_XL, 18px, center);
     padding: 25px;
     @include for-phone-only {
-      font-size: 18px;
+      font-size: 15px;
     }
   }
 }

@@ -7,6 +7,9 @@
   p {
     @include font(PP_R, 23px, center);
     padding: 15px;
+    @include for-phone-only {
+      font-size: 20px;
+    }
   }
 
   .button1 {
@@ -66,12 +69,18 @@
   h2 {
     @include font(PP_XB, 40px, center);
     padding: 5%;
+    @include for-phone-only {
+      font-size: 30px;
+    }
   }
   label {
     @include font(PP_XL, 18px, center);
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 3%;
+    @include for-phone-only {
+      font-size: 15px;
+    }
   }
   textarea {
     @include font(PP_XL, 18px, left);

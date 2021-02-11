@@ -45,8 +45,7 @@ header {
     text-align: center;
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
     @include for-phone-only {
-      font-size: 20px;
-      width: 50vw;
+      display: none;
     }
     @include for-tablet-portrait-up {
       width: 35vw;

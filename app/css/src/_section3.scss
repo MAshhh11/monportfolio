@@ -24,12 +24,15 @@
     @include font(PP_XB, 40px, center);
     padding: 30px;
     margin-top: 5vh;
+    @include for-phone-only {
+      font-size: 30px;
+    }
   }
   p {
     @include font(PP_XL, 18px, center);
     padding: 20px;
     @include for-phone-only {
-      font-size: 18px;
+      font-size: 15px;
     }
   }
 }
