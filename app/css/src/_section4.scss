@@ -24,7 +24,7 @@
     text-shadow: none;
     text-align: center;
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-    padding: 5px;
+    padding: 8px;
     margin-bottom: 20px;
     color: white;
     a:link {
@@ -89,23 +89,23 @@
     margin-left: 5%;
     margin-bottom: 3%;
     @include for-phone-only {
-      width: 60vw;
+      width: 65vw;
       height: 20vh;
     }
     @include for-tablet-portrait-up {
-      width: 60vw;
+      width: 75vw;
       height: 20vh;
     }
     @include for-tablet-landscape-up {
-      width: 60vw;
+      width: 75vw;
       height: 30vh;
     }
     @include for-desktop-up {
-      width: 60vw;
+      width: 50vw;
       height: 25vh;
     }
     @include for-big-desktop-up {
-      width: 40vw;
+      width: 30vw;
       height: 25vh;
     }
   }
@@ -117,12 +117,14 @@
   .envoyez {
     @include font(PP_XL, 20px, center);
     width: 20vh;
-    margin: 2%;
     background-color: white;
     border: 1px solid black;
     border-radius: 12px;
     @include for-tablet-portrait-up {
-      width: 12vw;
+      width: 14vw;
+    }
+    @include for-phone-only {
+      margin-left: -60px;
     }
   }
 }
