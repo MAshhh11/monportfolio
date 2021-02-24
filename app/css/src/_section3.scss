@@ -14,11 +14,11 @@
     }
   }
   img:hover {
-    transform: scale(1.4);
     position: relative;
     z-index: 2;
     box-shadow: none;
     cursor: crosshair;
+    transform: scale(1.2);
   }
   h2 {
     @include font(PP_XB, 40px, center);
