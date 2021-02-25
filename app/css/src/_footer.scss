@@ -4,9 +4,10 @@ footer {
   padding: 20px;
   @include for-phone-only {
     padding: 5px;
+    height: 35vh;
   }
   @include for-tablet-portrait-up {
-    height: 25vh;
+    height: 30vh;
   }
   @include for-tablet-landscape-up {
     height: 30vh;
