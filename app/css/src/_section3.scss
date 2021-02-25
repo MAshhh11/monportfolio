@@ -13,12 +13,36 @@
       margin-top: 10%;
     }
   }
-  img:hover {
+  .frame {
+    text-align: center;
     position: relative;
-    z-index: 2;
-    box-shadow: none;
-    cursor: crosshair;
-    transform: scale(1.2);
+    cursor: pointer;
+    perspective: 500px;
+  }
+  .frame img {
+    width: 100%;
+  }
+  .frame .details {
+    width: 70%;
+    height: 70%;
+    padding: 8% 8%;
+    position: absolute;
+    border-radius: 12px;
+    content: "";
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(90deg);
+    transform-origin: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transition: all 1s ease-in;
+    h5 {
+      @include font(PP_R, 25px, center);
+    }
+  }
+  .frame:hover .details {
+    transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
   }
   h2 {
     @include font(PP_XB, 40px, center);

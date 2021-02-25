@@ -65,6 +65,17 @@
   top: -50px;
   box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
   padding: 50px;
+  animation: slide-down 3s ease-out;
+  @keyframes slide-down {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   h2 {
     @include font(PP_XB, 40px, center);
@@ -126,5 +137,11 @@
     @include for-phone-only {
       margin-left: -60px;
     }
+  }
+  @include for-phone-only {
+    position: relative;
+    top: 0px;
+    padding: 5px;
+    border-radius: 0px;
   }
 }
