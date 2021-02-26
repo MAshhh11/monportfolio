@@ -9,6 +9,9 @@ header {
   background-position: center;
   color: white;
   padding: 2vw;
+  @include for-phone-only {
+    background-size: 70% contain;
+  }
 
   h1 {
     @include font(PP_XB, 45px, left);
