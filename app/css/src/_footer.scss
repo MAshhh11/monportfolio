@@ -1,10 +1,10 @@
 footer {
-  background-color: #40514e;
-  color: white;
+  background-color: #413c39;
+  color: #f5d09e;
   padding: 20px;
   @include for-phone-only {
     padding: 5px;
-    height: 35vh;
+    height: 50vh;
   }
   @include for-tablet-portrait-up {
     height: 30vh;
@@ -36,11 +36,11 @@ footer {
   }
 
   a:link {
-    color: white;
+    color: #f5d09e;
     text-decoration: none;
   }
   a:visited {
-    color: white;
+    color: #f5d09e;
     text-decoration: none;
   }
 }

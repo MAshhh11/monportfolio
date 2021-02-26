@@ -43,7 +43,11 @@
       padding: 5px 5px;
     }
     h5 {
-      @include font(PP_R, 25px, center);
+      @include font(PP_XB, 25px, center);
+      color: #413c39;
+    }
+    p {
+      color: #413c39;
     }
   }
   .frame:hover .details {
@@ -54,6 +58,7 @@
     @include font(PP_XB, 40px, center);
     padding: 30px;
     margin-top: 5vh;
+    color: #413c39;
     @include for-phone-only {
       font-size: 30px;
     }

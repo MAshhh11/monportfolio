@@ -1,6 +1,20 @@
 #skills {
-  background-color: #11999e;
-  height: auto;
+  background-color: #66b495;
+  @include for-phone-only {
+    height: auto;
+  }
+  @include for-tablet-portrait-up {
+    height: auto;
+  }
+  @include for-tablet-landscape-up {
+    height: auto;
+  }
+  @include for-desktop-up {
+    height: 70vh;
+  }
+  @include for-big-desktop-up {
+    height: 70vh;
+  }
 }
 
 .cartouche {
@@ -41,15 +55,18 @@
   h3 {
     @include font(PP_B, 23px, center);
     padding-bottom: 30px;
+    color: #413c39;
     @include for-phone-only {
       font-size: 22px;
     }
   }
   h4 {
     @include font(PP_R, 20px, center);
+    color: #413c39;
   }
   p {
     @include font(PP_XL, 18px, center);
+    color: #413c39;
     padding: 25px;
     @include for-phone-only {
       font-size: 15px;
