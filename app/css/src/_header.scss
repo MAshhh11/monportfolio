@@ -9,6 +9,10 @@ header {
     background-image: url(../../../img/dino.png);
     background-size: 190%;
   }
+  @include for-big-desktop-up {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 
   h1 {
     @include font(PP_XB, 45px, left);
