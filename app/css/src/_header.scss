@@ -47,7 +47,7 @@ header {
     @include font(PP_R, 30px, left);
     border: 1px solid #f5d09e;
     border-radius: 20px;
-    background-color: #413c39;
+    // background-color: #413c39;
     text-align: center;
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
     @include for-phone-only {
