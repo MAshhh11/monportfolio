@@ -3,6 +3,7 @@ header {
   background-image: url(../../../img/dino.png);
   background-size: 80% contain;
   background-position: center;
+  background-attachment: fixed;
   color: white;
   padding: 2vw;
   @include for-phone-only {
