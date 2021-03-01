@@ -9,6 +9,7 @@ header {
   @include for-phone-only {
     background-image: url(../../../img/dino.png);
     background-size: 190%;
+    background-attachment: local;
   }
   @include for-big-desktop-up {
     background-size: 100%;
