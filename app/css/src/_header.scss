@@ -17,7 +17,7 @@ header {
   }
 
   h1 {
-    @include font(PP_XB, 45px, left);
+    @include font(PP_XB, 40px, left);
     margin-top: 55vh;
     color: #f5d09e;
     text-shadow: 8px 2px 8px #413c39;
@@ -26,7 +26,7 @@ header {
     }
   }
   h2 {
-    @include font(PP_XB, 45px, left);
+    @include font(PP_XB, 50px, left);
     color: #f5d09e;
     text-shadow: 8px 2px 8px #413c39;
     @include for-phone-only {
@@ -45,7 +45,7 @@ header {
     }
   }
   .button1 {
-    @include font(PP_R, 30px, left);
+    @include font(PP_R, 25px, left);
     border: 1px solid #f5d09e;
     border-radius: 20px;
     // background-color: #413c39;
@@ -69,7 +69,6 @@ header {
     a:link {
       color: #f5d09e;
       text-decoration: none;
-      font-size: 28px;
     }
     a:hover {
       cursor: pointer;
