@@ -18,7 +18,7 @@ header {
   }
 
   h1 {
-    @include font(PP_XB, 40px, left);
+    @include font(PP_XB, 50px, left);
     margin-top: 55vh;
     color: #f5d09e;
     text-shadow: 8px 2px 8px #413c39;
