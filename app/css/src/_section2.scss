@@ -16,7 +16,6 @@
     height: 70vh;
   }
 }
-
 .cartouche {
   background-color: white;
   text-align: center;
@@ -37,23 +36,18 @@
       transform: translateY(0);
     }
   }
-
   @include for-phone-only {
     position: relative;
     top: 0px;
     padding: 5px;
     border-radius: 0px;
   }
-
   img {
     width: 40%;
     padding: 30px;
     @include for-phone-only {
       width: 38%;
     }
-  }
-  .pix:hover {
-    transform: translate(-50%, -50%) rotateY(0deg);
   }
   h3 {
     @include font(PP_B, 23px, center);
