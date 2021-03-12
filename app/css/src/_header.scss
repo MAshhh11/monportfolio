@@ -1,31 +1,21 @@
 body {
-  background: #413c39;
-  display: flex;
-  overflow: hidden;
+  background-color: #413c39;
 }
-.spinner {
-  width: 10em;
-  height: 10em;
-  border-top: 1em solid #f5d09e;
-  border-right: 1em solid transparent;
-  animation: spinner 0.4s linear infinite;
+#loader {
+  border: 16px solid #f5d09e;
   border-radius: 50%;
-  margin: auto;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
 }
-.head {
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  margin-left: 8.5em;
-  margin-top: 0.5em;
-  background-color: #f5d09e;
-}
-@keyframes spinner {
-  to {
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
     transform: rotate(360deg);
   }
 }
-
 .hide-loader {
   display: none;
 }
