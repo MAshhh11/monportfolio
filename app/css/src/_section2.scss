@@ -52,6 +52,9 @@
       width: 38%;
     }
   }
+  .pix:hover {
+    transform: translate(-50%, -50%) rotateY(0deg);
+  }
   h3 {
     @include font(PP_B, 23px, center);
     padding-bottom: 30px;

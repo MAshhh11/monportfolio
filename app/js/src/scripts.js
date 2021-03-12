@@ -1,4 +1,6 @@
 
+// LOADER
+$('#loader').addClass("hide-loader");
 //ANIMATION SUR H1
 
 // Faire en sorte que chaque lettre soit un span et appliquer l'annimation
