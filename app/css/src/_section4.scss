@@ -65,10 +65,12 @@
   color: #413c39;
   padding: 10vh;
   position: relative;
-  top: -50px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 50px;
   animation: slide-down 3s ease-out;
+  @include for-phone-only {
+    border-radius: 0px;
+  }
   @keyframes slide-down {
     0% {
       opacity: 0;
