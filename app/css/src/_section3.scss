@@ -22,6 +22,20 @@
   .frame img {
     width: 100%;
   }
+  .frame p {
+    @include for-phone-only {
+      padding: 30px;
+    }
+    @include for-tablet-portrait-up {
+      font-size: 12px;
+    }
+    @include for-tablet-landscape-up {
+      font-size: 12px;
+    }
+    @include for-desktop-up {
+      font-size: 16px;
+    }
+  }
   .frame .details {
     width: 70%;
     height: 70%;
