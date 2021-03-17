@@ -1,8 +1,6 @@
-
 // LOADER
-$('#loader').addClass("hide-loader");
-//ANIMATION SUR H1
 
+//ANIMATION SUR H1
 // Faire en sorte que chaque lettre soit un span et appliquer l'annimation
 var textWrapper = document.querySelector('.titre');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>"); //Mon h1 se transforme en span

@@ -1,5 +1,23 @@
-body {
-  background-color: #413c39;
+// LOADER
+.loader {
+  background-color: #413c39 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  position: relative !important;
+}
+
+.loader svg {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+svg path,
+svg rect {
+  fill: #f5d09e;
+}
+.nodisplay {
+  display: none;
 }
 
 header {
