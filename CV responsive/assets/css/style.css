@@ -20,6 +20,10 @@ h3 {
   font-family: "GothicA1 Black", sans-serif;
   font-size: 18px;
 }
+h3 span {
+  font-style: italic;
+  font-weight: normal;
+}
 
 p {
   font-family: "GothicA1 Light", sans-serif;
