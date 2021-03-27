@@ -10,14 +10,19 @@ footer {
   li {
     @include font(PP_B, 25px, center);
     list-style: none;
-    display: inline;
     padding: 10px;
     @include for-phone-only {
       font-size: 22px;
+      display: block;
+      @include font(PP_B, 20px, center);
+    }
+    @include for-desktop-up {
+      display: inline-block;
+      @include font(PP_B, 25px, right);
     }
   }
   p {
-    @include font(PP_XL, 18px, right);
+    @include font(PP_XL, 18px, center);
   }
   p i {
     font-size: 30px;
@@ -51,6 +56,14 @@ footer {
     }
     @include for-big-desktop-up {
       height: 200px;
+    }
+  }
+  .disp {
+    @include for-phone-only {
+      justify-content: center;
+    }
+    @include for-desktop-up {
+      justify-content: right;
     }
   }
 }
